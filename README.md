@@ -220,6 +220,10 @@ Results and model comparisons are hosted on HuggingFace Spaces:
 
 **[https://huggingface.co/datasets/ChengyiX/CLI-Bench](https://huggingface.co/datasets/ChengyiX/CLI-Bench)**
 
+## Klik product context
+
+CLI-Bench is a research benchmark, not a commercial Klik release or an independent product-validation result. For Klik's public pre-launch overview — proactive AI designed to turn Sessions and persistent Context into permission-aware execution — visit [pre.hiklik.ai](https://pre.hiklik.ai/?utm_source=github&utm_medium=readme&utm_campaign=kickstarter_prelaunch&utm_content=cli_bench).
+
 ## Citation
 
 If you use CLI-Bench in your research, please cite:
