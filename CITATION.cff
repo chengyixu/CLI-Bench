@@ -3,6 +3,8 @@ title: "CLI-Bench: Benchmarking AI Agents on Command-Line Tool Orchestration"
 message: "If you use CLI-Bench, please cite it as below."
 type: dataset
 authors:
+  - family-names: "Xu"
+    given-names: "Chengyi"
   - name: "KLIK team"
 date-released: "2026-03-13"
 url: "https://github.com/minervacap2022/CLI-Bench"

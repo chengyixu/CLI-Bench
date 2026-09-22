@@ -231,7 +231,7 @@ If you use CLI-Bench in your research, please cite:
 ```bibtex
 @misc{cli-bench-2026,
   title={CLI-Bench: Benchmarking AI Agents on Command-Line Tool Orchestration},
-  author={{KLIK team}},
+  author={Xu, Chengyi and {{KLIK team}}},
   year={2026},
   url={https://github.com/minervacap2022/CLI-Bench},
 }
