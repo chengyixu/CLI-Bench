@@ -2,10 +2,12 @@
 
 % NeurIPS-style formatting
 \usepackage[final]{neurips_2024}
+\usepackage[benchmark]{klik-paper}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\hypersetup{pdftitle={CLI-Bench: A Memorization-Proof Benchmark for Tool-Agnostic Command-Line Interface Orchestration},pdfauthor={KLIK team},pdfsubject={KLIK agent benchmark research},pdfkeywords={KLIK, agents, benchmark, reliability}}
 \usepackage{url}
 \usepackage{booktabs}
 \usepackage{amsfonts}
@@ -34,8 +36,7 @@
 \title{CLI-Bench: A Memorization-Proof Benchmark for\\Tool-Agnostic Command-Line Interface Orchestration}
 
 \author{
-  Minerva \& Klik Team\\
-  \texttt{tech@minervacap.cn}
+  KLIK team\\
 }
 
 \begin{document}
@@ -53,7 +54,7 @@ We introduce \clibench{}, a benchmark for evaluating AI agents' ability to orche
 
 The deployment of large language models (LLMs) as autonomous agents capable of executing complex workflows has progressed rapidly \citep{agentbench2023, webarena2023}. Modern LLM-based agents can browse the web, write code, and orchestrate API calls to accomplish user goals. However, evaluating these capabilities presents a fundamental challenge: how do we distinguish genuine \emph{tool learning} from mere \emph{tool memorization}?
 
-Consider an agent that successfully executes \texttt{gh issue create --title "Bug fix" --body "Description"}. Has the agent learned to read GitHub CLI documentation and apply it correctly, or has it simply memorized this common command pattern from its training corpus? This distinction matters critically for deployment: an agent that has memorized GitHub CLI syntax may fail catastrophically when asked to use an unfamiliar internal CLI tool.
+Consider an agent that successfully executes \texttt{gh issue create} with title and body arguments. Has the agent learned to read GitHub CLI documentation and apply it correctly, or has it simply memorized this common command pattern from its training corpus? This distinction matters critically for deployment: an agent that has memorized GitHub CLI syntax may fail catastrophically when asked to use an unfamiliar internal CLI tool.
 
 Existing tool-use benchmarks suffer from this conflation. ToolBench \citep{toolbench2023} evaluates on 16,000+ real-world APIs from RapidAPI---but these APIs and their documentation are publicly available and likely present in LLM training data. API-Bank \citep{api-bank2023} uses a fixed set of APIs that models may have memorized. Even WebArena \citep{webarena2023}, while providing realistic environments, tests on standard web interfaces that models have encountered extensively.
 

@@ -5,7 +5,7 @@ description = "CLI-Bench: Benchmarking AI Agents on Command-Line Tool Orchestrat
 readme = "README.md"
 requires-python = ">=3.12"
 license = {text = "Apache-2.0"}
-authors = [{name = "KLIK Team"}]
+authors = [{name = "KLIK team"}]
 keywords = ["benchmark", "ai-agents", "cli", "evaluation", "llm"]
 classifiers = [
     "Development Status :: 3 - Alpha",
